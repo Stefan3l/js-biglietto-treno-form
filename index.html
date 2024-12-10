@@ -15,24 +15,24 @@
             <div class="dati-ticket">  
                 <div class="section">
                     <h4>Nome Cognome</h4>
-                    <input type="text" placeholder="Jon Snow" required>
+                    <input id="name" type="text" placeholder="Jon Snow" required>
                 </div>
                 <div class="section">
                     <h4>Km da percorrere</h4>
-                    <input type="text" placeholder="10" required>
+                    <input id="km" type="text" placeholder="10" required>
                 </div>
                 <div class="section">
                     <h4>Fascia d'eta</h4>
                     <select>
-                        <option value="1">Standard</option>
-                        <option value="2">Minoreni</option>
-                        <option value="3">Pensionati</option>
+                        <option id="standard" value="1">Standard</option>
+                        <option id="minoreni" value="2">Minoreni</option>
+                        <option id="pensionati" value="3">Pensionati</option>
                     </select>               
                 </div>
             </div>
             <div class="buttons">
-                <button type="submit" id="button" >Genera</button>
-                <button type="reset" id="button" >Annula</button>                   
+                <button type="submit" id="submit" >Genera</button>
+                <button type="reset" id="reset" >Annula</button>                   
             </div> 
         </div>
             <h3>IL TUO BIGLIETTO</h3>
@@ -42,24 +42,24 @@
                 <div class="detagli-biglietto">
                     <div class="name-passaggero">
                         <h2>NOME PASSEGGERO</h2>
-                        <div>Jon Snow</div>
+                        <div id="name-client">Jon Snow</div>
                     </div>
                     <div class="detagli">
                         <div>
                             <div class="dati-principali">Offerta</div>
-                            <div>Biglietto Standard</div>
+                            <div id="offerta">Biglietto Standard</div>
                         </div>
                         <div>
                             <div class="dati-principali">Carrozza</div>
-                            <div>5</div>
+                            <div id="seat">5</div>
                         </div>
                         <div>
                             <div class="dati-principali">Codice CP</div>
-                            <div>92911</div>
+                            <div id="codice">92911</div>
                         </div>
                         <div>
                             <div class="dati-principali">Costo biglietto</div>
-                            <div>2.10 €</div>
+                            <div id="costo">2.10 €</div>
                         </div>
                     </div>
                 </div>
