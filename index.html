@@ -11,7 +11,7 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </header>
     <main>
-        <div class="container">
+        <form class="container">
             <div class="dati-ticket">  
                 <div class="section">
                     <h4>Nome Cognome</h4>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="section">
                     <h4>Km da percorrere</h4>
-                    <input id="km" type="text" placeholder="10" required>
+                    <input id="km" type="number" placeholder="10" required>
                 </div>
                 <div class="section">
                     <h4>Fascia d'eta</h4>
@@ -31,10 +31,10 @@
                 </div>
             </div>
             <div class="buttons">
-                <button type="submit" id="submit" >Genera</button>
-                <button type="reset" id="reset" >Annula</button>                   
+                <button id="submit" type="submit" value="Submit">Genera</button>
+                <button id="reset" type="reset" value="Reset">Annula</button>                   
             </div> 
-        </div>
+        </form>
             <h3>IL TUO BIGLIETTO</h3>
         <div class="ticket container">
             <div>
