@@ -7,7 +7,66 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="dati-ticket">  
+                <div class="section">
+                    <h4>Nome Cognome</h4>
+                    <input type="text" placeholder="Jon Snow" required>
+                </div>
+                <div class="section">
+                    <h4>Km da percorrere</h4>
+                    <input type="text" placeholder="10" required>
+                </div>
+                <div class="section">
+                    <h4>Fascia d'eta</h4>
+                    <select>
+                        <option value="1">Standard</option>
+                        <option value="2">Minoreni</option>
+                        <option value="3">Pensionati</option>
+                    </select>               
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="button" >Genera</button>
+                <button type="reset" id="button" >Annula</button>                   
+            </div> 
+        </div>
+            <h3>IL TUO BIGLIETTO</h3>
+        <div class="ticket container">
+            <div>
+                <h4>Dettaglio Passeggeri</h4>
+                <div class="detagli-biglietto">
+                    <div class="name-passaggero">
+                        <h2>NOME PASSEGGERO</h2>
+                        <div>Jon Snow</div>
+                    </div>
+                    <div class="detagli">
+                        <div>
+                            <div class="dati-principali">Offerta</div>
+                            <div>Biglietto Standard</div>
+                        </div>
+                        <div>
+                            <div class="dati-principali">Carrozza</div>
+                            <div>5</div>
+                        </div>
+                        <div>
+                            <div class="dati-principali">Codice CP</div>
+                            <div>92911</div>
+                        </div>
+                        <div>
+                            <div class="dati-principali">Costo biglietto</div>
+                            <div>2.10 €</div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+    </main>
     <script src="./js/script.js"></script>
 </body>
 </html>
