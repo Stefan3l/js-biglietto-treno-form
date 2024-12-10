@@ -34,7 +34,7 @@ h3 {
     color: #b91547;
 }
 
-.ticket, h3 {
+.ticket {
     display: none;
 }
 

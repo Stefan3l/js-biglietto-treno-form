@@ -11,7 +11,7 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     </header>
     <main>
-        <form class="container">
+        <form id="form" class="container">
             <div class="dati-ticket">  
                 <div class="section">
                     <h4>Nome Cognome</h4>
@@ -23,11 +23,11 @@
                 </div>
                 <div class="section">
                     <h4>Fascia d'eta</h4>
-                    <select>
-                        <option id="standard" value="1">Standard</option>
-                        <option id="minoreni" value="2">Minoreni</option>
-                        <option id="pensionati" value="3">Pensionati</option>
-                    </select>               
+                    <select id="options">
+                        <option value="standard">Standard</option>
+                        <option value="minoreni" selected>Minoreni</option>
+                        <option value="pensionati">Pensionati</option>
+                    </select>        
                 </div>
             </div>
             <div class="buttons">
@@ -35,36 +35,38 @@
                 <button id="reset" type="reset" value="Reset">Annula</button>                   
             </div> 
         </form>
+        <div id="biglietto-treno" class="ticket">
             <h3>IL TUO BIGLIETTO</h3>
-        <div class="ticket container">
-            <div>
-                <h4>Dettaglio Passeggeri</h4>
-                <div class="detagli-biglietto">
-                    <div class="name-passaggero">
-                        <h2>NOME PASSEGGERO</h2>
-                        <div id="name-client">Jon Snow</div>
+            <div  class="container">
+                <div>
+                    <h4>Dettaglio Passeggeri</h4>
+                    <div class="detagli-biglietto">
+                        <div class="name-passaggero">
+                            <h2>NOME PASSEGGERO</h2>
+                            <div id="name-client">Jon Snow</div>
+                        </div>
+                        <div class="detagli">
+                            <div>
+                                <div class="dati-principali">Offerta</div>
+                                <div id="offerta">Biglietto Standard</div>
+                            </div>
+                            <div>
+                                <div class="dati-principali">Carrozza</div>
+                                <div id="seat">5</div>
+                            </div>
+                            <div>
+                                <div class="dati-principali">Codice CP</div>
+                                <div id="codice">92911</div>
+                            </div>
+                            <div>
+                                <div class="dati-principali">Costo biglietto</div>
+                                <div id="costo">2.10 €</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="detagli">
-                        <div>
-                            <div class="dati-principali">Offerta</div>
-                            <div id="offerta">Biglietto Standard</div>
-                        </div>
-                        <div>
-                            <div class="dati-principali">Carrozza</div>
-                            <div id="seat">5</div>
-                        </div>
-                        <div>
-                            <div class="dati-principali">Codice CP</div>
-                            <div id="codice">92911</div>
-                        </div>
-                        <div>
-                            <div class="dati-principali">Costo biglietto</div>
-                            <div id="costo">2.10 €</div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            
+                </div> 
+                
+            </div>
         </div>
     </main>
     <script src="./js/script.js"></script>
