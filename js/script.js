@@ -9,13 +9,12 @@ const resetELem = document.getElementById(`reset`)
 const formElem = document.getElementById(`form`)
 
 
-
+console.log(kmClientElem.value)
 // Elements dati biglietto
 
 const bigliettoTrenoElem = document.getElementById(`biglietto-treno`)
 const nameClientElem = document.getElementById(`name-client`)
 const offertaElem = document.getElementById(`offerta`)
-console.log(offertaElem.value)
 const seatElem = document.getElementById(`seat`)
 const codiceElem = document.getElementById(`codice`)
 const costoBigliettoElem = document.getElementById(`costo`)
@@ -35,7 +34,8 @@ const numberCodice =  Math.floor((Math.random() * (100000 - 90000)) + 90000)
 
 form.addEventListener("submit", function(event) {
     event.preventDefault()
-    let priceBiglietto = kmClientElem.value * priceKm;
+    let priceBiglietto = Number(kmClientElem.value) * priceKm;
+    
     if(tariffAllElem.value === "minoreni") {      
         const discountPriceMinoreni = priceBiglietto * 0.20;
         discount = priceBiglietto - discountPriceMinoreni;
